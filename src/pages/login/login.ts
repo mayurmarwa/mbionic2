@@ -83,7 +83,7 @@ export class LoginPage {
                 });
             } else {
                 this.authService.loginUser(this.loginForm.value.email,
-                    this.loginForm.value.password).then(data => {
+                    this.loginForm.value.password).then(() => {
 
                         this.loading.dismiss();
                         //this.storage.ready().then(() => {
@@ -131,11 +131,14 @@ export class LoginPage {
     }
 
     private login(mode) {
-        this.loading = this.loadingCtrl.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Connecting To Google, Please Wait...',
+            dismissOnPageChange: true
+        });
         this.loading.present().then(() => {
 
             this.authService.login(mode)
-                .then((data) => {
+                .then(() => {
                     this.loading.dismiss();
                     /* this.authService.getFullProfile(data.uid)
                        .first()
@@ -189,11 +192,14 @@ export class LoginPage {
     }
 
     private login2() {
-        this.loading = this.loadingCtrl.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Connecting To Facebook, Please Wait...',
+            dismissOnPageChange: true
+        });
         this.loading.present().then(() => {
 
             this.authService.login2()
-                .then((data) => {
+                .then(() => {
                     this.loading.dismiss()
                     /*console.log(data);
                     this.authService.getFullProfile(data.uid)
