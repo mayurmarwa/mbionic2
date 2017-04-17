@@ -25,9 +25,16 @@
             <ion-row style="margin-top:20px">
                 <ion-col text-center>
                     <button  *ngIf="verifybutton" ion-button (click)="verifyotp()">Verify</button>
+                    
+                            <div *ngIf="!verifybutton" text-center>
+                                <ion-spinner name="bubbles"></ion-spinner>
+                                <p>Verifying...</p>
+                            </div>
+                       
                 </ion-col>
              </ion-row>
-            <ion-row>
+
+            <ion-row *ngIf="verifybutton">
                 <ion-col text-center>
                     <button ion-button clear (click)="resendOTP()">Resend OTP</button>
                 </ion-col>

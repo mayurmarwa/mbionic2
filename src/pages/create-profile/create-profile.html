@@ -1,9 +1,9 @@
 
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Complete Your Profile</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Create Profile</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
@@ -13,7 +13,7 @@
 
         <ion-item>
             <ion-label stacked>Mobile  No.</ion-label>
-            <ion-input #mobile formControlName="mobile" type="number" (change)="elementChanged(mobile)"
+            <ion-input #mobile formControlName="mobile" type="number" (change)="elementChanged(mobile)" maxlength="10"
                        placeholder="10 Digit Number">
             </ion-input>
         </ion-item>
@@ -24,7 +24,7 @@
                        placeholder="Name of Business">
             </ion-input>
         </ion-item>
- 
+
         <ion-item>
             <ion-label stacked>Company Address</ion-label>
             <ion-input #address formControlName="address" type="text" (change)="elementChanged(address)"
@@ -38,7 +38,7 @@
                        placeholder="Enter company details">
             </ion-input>
         </ion-item>
-        <button ion-button block type="submit">
+        <button style="margin-top:25px" ion-button block type="submit">
             Create
         </button>
 

@@ -68,11 +68,12 @@ import { OrderBy } from '../pipes/orderBy';
 import { AngularFireModule } from 'angularfire2';
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyBQHf2p8RLOuw7i_DHdsfc8HHCFfwcIPEQ",
-    authDomain: "metbazaardev.firebaseapp.com",
-    databaseURL: "https://metbazaardev.firebaseio.com",
-    storageBucket: "metbazaardev.appspot.com",
-    messagingSenderId: "79899062384"
+    apiKey: "AIzaSyBLx3cXHMhd6TOWWDGZS-J1stb2w34B47A",
+    authDomain: "metbazaar.firebaseapp.com",
+    databaseURL: "https://metbazaar.firebaseio.com",
+    projectId: "metbazaar",
+    storageBucket: "metbazaar.appspot.com",
+    messagingSenderId: "639273963235"
 };
 
 @NgModule({

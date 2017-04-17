@@ -62,23 +62,21 @@
     "cordova-plugin-googleplus",
     "cordova-sqlite-storage",
     "cordova-plugin-x-socialsharing",
-    "cordova-plugin-console",
     {
       "id": "phonegap-plugin-push",
       "locator": "phonegap-plugin-push",
       "variables": {
-        "SENDER_ID": "79899062384"
+        "SENDER_ID": "639273963235"
       }
     },
     {
       "id": "cordova-plugin-facebook4",
       "locator": "cordova-plugin-facebook4",
       "variables": {
-        "APP_ID": "123456789",
-        "APP_NAME": "myApplication"
+        "APP_ID": "1832286610428036",
+        "APP_NAME": "MetBazaar"
       }
-    },
-    "cordova-plugin-sms"
+    }
   ],
   "cordovaPlatforms": [
     {
