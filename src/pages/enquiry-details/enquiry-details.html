@@ -168,10 +168,10 @@
     <form #f="ngForm">
         <ion-grid>
             <ion-row>
-                <ion-col width-80>                    
+                <ion-col col-10>                    
                         <ion-input type="text" [(ngModel)]="chatBox" name="chatText" required placeholder="Message..."></ion-input>                                          
                 </ion-col>
-                <ion-col>
+                <ion-col col-2>
                     <button  ion-button clear icon-only (click)="send(f.value,f.valid)" [disabled]="f.valid === false" icon-right>
                         
                         <ion-icon name="send"></ion-icon>

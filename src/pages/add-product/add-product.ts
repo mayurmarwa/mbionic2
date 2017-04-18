@@ -67,6 +67,7 @@ export class AddProductPage {
         this.getGrades();
         this.compositiontxt = null;
         this.gradeval = "test";
+        this.selptype2 = "Standard";
         //this.catDetails = this.af.database.object('productcategories/' + this.catid);
         this.coilsForm = formBuilder.group({
             name: ['', Validators.required],
